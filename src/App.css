@@ -1,38 +1,148 @@
-.App {
-  text-align: center;
+html,
+body {
+  min-height: 100%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+* {
+  padding: 0;
+  margin: 0;
+  outline: 0;
+  box-sizing: border-box;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body {
+  background: #4164ff; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to top,
+    #148bfa,
+    #2b4bff
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to top,
+    #8088ff,
+    #5b16aa
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  flex-direction: column;
+}
+
+.container {
+  width: 400px;
+}
+
+.title {
+  margin: 25px;
+  text-align: center;
+  color: #fff;
+}
+
+.new-task-box {
+  display: flex;
+  justify-content: space-between;
+
+  background-color: #fff;
+  padding: 10px;
+}
+
+.new-task-box input {
+  border: none;
+  color: #777;
+  font-size: 16px;
+  font-weight: 500;
+  flex-grow: 1;
+  margin-right: 10px;
+}
+
+.new-task-box button {
+  border: none;
+  font-weight: bold;
+  font-size: 18px;
+  color: skyblue;
+  background-color: transparent;
+}
+
+.new-task-box button:hover {
+  color: rgb(0, 29, 116);
+}
+
+.error-message {
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.tasks-box {
+  margin-top: 30px;
+  background-color: white;
+  padding: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.task-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0px;
+  border-bottom: 1px solid #c5b2e4;
+}
+
+.task-box > div {
+  color: #544545;
+  font-size: 18px;
+}
+
+.task-box > div > label {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: #544545;
+  font-size: 18px;
+}
+
+.task-box > div > label > input {
+  margin-right: 10px;
+}
+
+.done-task {
+  text-decoration: line-through;
+  color: red;
+}
+
+.remove-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  border: none;
+  font-weight: bold;
+  font-size: 18px;
+  color: #dd7d6b;
+  background-color: transparent;
+}
+
+.remove-button:hover {
+  opacity: 0.7;
+}
+
+.clear-button-box {
+  display: flex;
+  justify-content: flex-end;
+
+  padding: 10px;
+}
+
+.clear-button-box button {
+  border: none;
+  font-weight: bold;
+  font-size: 18px;
+  color: #dd7d6b;
+  background-color: transparent;
+}
+
+.clear-button-box button:hover {
+  color: #ff4b2b;
+}
+
+.clear-button-box button:disabled {
+  color: #ccc;
+  cursor: not-allowed;
 }
