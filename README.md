@@ -9,7 +9,7 @@ App criado com: TypeScript, Css, Html. (React)
 <p> Selecionar tarefa.
 <p> Excluir tarefa.
 
-Usuário consegue criar lista de tarefas, selecionar e excluir.
+Usuário consegue criar ums lista de tarefas, selecionar e excluir.
 
 <p align="center">
 <img src="/todo-app.png">
